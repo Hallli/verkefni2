@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %} Fréttir {% endblock %}
+{% block content %}
+    <main>
+        <section>
+            <h1>
+                {{ news[1] }}
+            </h1>
+            <img src="/static/mynd{{ nr }}.jpg">
+        </section>
+        <section>
+            <p>{{ news[2] }}</p>
+            <p>Höfundur: {{ news[3] }}</p>
+        </section>
+    </main>
+    <p><a href="/b-hluti">Fréttayfirlit</a></p>
+    <p><a href="/a-hluti">Verkenfi 2.1</a></p>
+    <p><a href="/">Forsíða</a></p>
+{% endblock %}
